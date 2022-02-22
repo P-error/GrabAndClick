@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+
+:root{
+     --color1: gray;
+     --color2: black;
+}
+
+/*Цвета*/
+.color1{
+     color: var(--color1);
+}
+.color2{
+     color: var(--color2);
+}
+.bg1{
+     background-color: var(--color1);
+}
+.bg2{
+     background-color: var(--color2);
+}
+
+.game{
+     background: url(../images/spacebg.jpg) 0 0/100% 100% no-repeat;
+}
+.bgspace{
+     background: url(../images/spacebg.jpg) 0 0/100% 100% no-repeat;
+}
+/*------------------------------------------------------------------*/
+/*Navbar*/
+.navbar-color{
+     background-image: url(../images/navbg.jpg);
+}
+.navbar-nav.dropdown{
+     right: 0;
+     left: auto;
+}
+/*------------------------------------------------------------------*/
+/*Header*/
+section{
+         font:5vh Lora;
+         background-color: lightgray;
+
+     padding: 100px 0;
+}
+header{
+         font:5vh Lora;
+
+     padding: 200px 0;
+}
+header, footer{
+         font:5vh Lora;
+
+     background: url(../images/spacebg.jpg) 0 0/100% 100% no-repeat;
+}
+
+.itd_play{
+     background-color: var(--color1);
+     width: 60px;
+     height: 60px;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     cursor: pointer;
+     margin: 30px auto 30px;
+     transition: all 0.2s ease;
+}
+.itd_play:hover{
+     background-color: var(--color2);
+}
+
+.itd_triangle{
+     margin-right: -3px;
+     width: 0;
+     height: 0;
+     border-style: solid;
+     border-width: 10px 0px 10px 20px;
+     border-color: transparent transparent transparent var(--bs-white);
+}
+
+.btn-itd{
+     display: block;
+     max-width: 200px;
+     margin: 0 auto;
+     padding: 8px 30px;
+     color: var(--bs-white);
+     background-color: var(--color2);
+}
+.btn-itd:hover{
+     color: var(--bs-white);
+     background-color: var(--color1);
+}
+/*------------------------------------------------------------------*/
+/*About*/
+.about, .author{
+         font:5vh Lora;
+
+         background-color: lightgray;
+}
+.itd-circle{
+     margin: 0 auto 15px;
+     width: 200px;
+     height: 300px;
+     bottom: 3px solid var(--color2);
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.itd-circle img{
+     min-height: 200px;
+     min-width: 300px;   
+}
+
+/*------------------------------------------------------------------*/
+/*Rules*/
+.rules h5{
+     padding: 25px;
+     margin: 50px 0px 20px 0px;
+     border: 3px solid var(--color1);
+}
+.rules img{
+     min-height: 700px;
+     min-width: 300px;
+}
+/*------------------------------------------------------------------*/
+/*Author*/
+
+/*------------------------------------------------------------------*/
+/*Footer*/
+footer{
+     padding: 30px 0;
+}
+.footer {
+     position: 0 0;
+}
+
+
+
+/*------------------------------------------------------------------*/
+/*Bestiary*/
+.bestiary{
+background: none;
+     color: black;
+}
+.bestiary.row{
+     margin-top: 20px;
+}
+.leg{
+     color: gold;
+     text-decoration: bold;
+}
+.rare{
+     color: purple;
+     text-decoration: bold;
+}
+.com{
+     color: brown;
+     text-decoration: bold;
+}
+
+.itd-circle{
+     margin: 0 auto 15px;
+     width: 200px;
+     height: 300px;
+     bottom: 3px solid var(--color2);
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.itd-circle img{
+     min-height: 200px;
+     min-width: 300px;   
+}
+
+/*------------------------------------------------------------------*/
+/*Game*/
+
+.zerg{
+
+}
+
+.zerg.type1{
+     position: absolute;
+     top: 500px;
+     left: 700px;
+     opacity: 1;
+     animation-name: leftToRight;
+     animation-duration: 1s;
+     animation-direction: alternate;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+}
+
+.zerg.type1:hover{
+     animation-play-state: paused;
+     opacity: 1;
+}
+.zerg.type2{
+     position: absolute;
+     top: 400px;
+     left: 100px;
+     opacity: 1;
+     animation-name: zigzag;
+     animation-duration: 1s;
+     animation-direction: alternate;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+}
+
+.zerg.type2:hover{
+     animation-play-state: paused;
+     opacity: 1;
+}
+.zerg.type3{
+     position: absolute;
+     top: 100px;
+     left: 500px;
+     opacity: 1;
+     animation-name: zig;
+     animation-duration: 1s;
+     animation-direction: alternate;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+}
+
+.zerg.type3:hover{
+     animation-play-state: paused;
+     opacity: 1;
+}
+.zerg.type4{
+     position: absolute;
+     top: 500px;
+     left: 500px;
+     opacity: 1;
+     animation-name: blink;
+     animation-duration: 70ms;
+     animation-direction: alternate;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+}
+
+.zerg.type4:hover{
+     animation-play-state: paused;
+     opacity: 1;
+}
+.zerg.type5{
+     position: absolute;
+     top: 300px;
+     left: 900px;
+     opacity: 1;
+     animation-name: Orbita2;
+     animation-duration: 2s;
+     animation-direction: normal;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+}
+
+.zerg.type5:hover{
+     animation-play-state: paused;
+     opacity: 1;
+}
+.zerg.type6{
+     position: absolute;
+     top: 100px;
+     left: 100px;
+     opacity: 1;
+     animation-name: upToDown;
+     animation-duration: 1s;
+     animation-direction: alternate;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+}
+.zerg.type6:hover{
+     animation-play-state: paused;
+     opacity: 1;
+}
+.zerg.type7{
+     position: absolute;
+     top: 100px;
+     left: 1200px;
+     opacity: 0;
+     animation-name: op;
+     animation-duration: 1ms;
+}
+.zerg.type6:hover{
+     animation-play-state: running;
+     opacity: 1;
+}
+
+
+
+@keyframes op {
+    from {opacity: 0; }
+    to   {opacity: 1;}
+}
+@keyframes Orbita2 {
+    from { transform: rotate(180deg) translateX(150px) rotate(180deg); }
+    to   { transform: rotate(540deg) translateX(150px) rotate(540deg); }
+}
+@keyframes upToDown{
+     0%{
+          top: 100;
+          opacity: 1;
+     }
+     50%{
+          opacity: 1;
+     }
+     100%{
+          top: 500px;
+          opacity: 1;
+     }
+}
+@keyframes leftToRight{
+     0%{
+          left: 0;
+          opacity: 1;
+     }
+     50%{
+          opacity: 1;
+     }
+     100%{
+          left: 1000px;
+          opacity: 1;
+     }
+}
+@keyframes blink{
+     0%{
+          opacity: 1;
+     }
+     100%{
+          opacity: 0;
+     }
+}
+@keyframes zig{
+     0%{
+          left: 500;
+          top: 100;
+     }
+     50%{
+          opacity: 1;
+     }
+     100%{
+          left: 1000px;
+          top: 500px;
+     }
+}
+@keyframes zigzag{
+     0%{
+          left: 0px;
+          top: 0px;     
+
+     }
+     25%{
+          left: 300px;
+          top: 500px;     
+     }
+     50%{
+          left: 600px;
+          top: 0px; 
+     }
+     75%{
+          left: 900px;
+          top: 500px; 
+     }
+     100%{
+          left: 1200px;
+          top: 0px; 
+     }
+}
